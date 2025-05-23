@@ -1,0 +1,57 @@
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.price-card {
+  background: #111;
+  border: 2px solid #f9b400;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 260px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px #f9b40050;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #f9b400;
+}
+
+.price-card h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: #f9b400;
+}
+
+.price-card .price {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.price-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.select-btn {
+  background: #f9b400;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.select-btn:hover {
+  background: #fff;
+  color: #111;
+}
