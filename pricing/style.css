@@ -8,25 +8,25 @@
 
 .price-card {
   background: #111;
-  border: 2px solid #f9b400;
+  border: 2px solid #00f900;
   border-radius: 12px;
   padding: 30px 20px;
   width: 260px;
   color: #fff;
   text-align: center;
-  box-shadow: 0 0 10px #f9b40050;
+  box-shadow: 0 0 10px #00f90050;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .price-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 20px #f9b400;
+  box-shadow: 0 0 20px #00f900;
 }
 
 .price-card h2 {
   font-size: 26px;
   margin-bottom: 12px;
-  color: #f9b400;
+  color: #00f900;
 }
 
 .price-card .price {
@@ -41,7 +41,7 @@
 }
 
 .select-btn {
-  background: #f9b400;
+  background: #00f900;
   color: #111;
   border: none;
   padding: 10px 20px;

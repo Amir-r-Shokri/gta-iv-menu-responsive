@@ -10,6 +10,7 @@ body {
   color: #ccc;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
+  
 }
 
 /* NAVBAR */
@@ -37,11 +38,11 @@ body {
 
 .menu-bar a:hover {
   color: #fff;
-  text-shadow: 0 0 8px #fff;
+  text-shadow: 0 0 8px #00f900;
 }
 
 .menu-bar a.active {
-  color: #f9b400;
+  color: #00f900;
 }
 
 /* CONTENT */
@@ -52,22 +53,22 @@ body {
 
 .welcome-heading {
   font-size: 48px;
-  color: #f9b400;
+  color: #00f900;
   margin-bottom: 50px;
-  text-shadow: 0 0 12px #f9b400;
+  text-shadow: 0 0 12px #00f900;
 }
 
 /* CARDS SECTION */
 .card {
   background: #111;
-  border: 2px solid #f9b400;
+  border: 2px solid #00f900;
   border-radius: 12px;
   padding: 35px 20px;
   width: 280px;
   color: #fff;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
-  box-shadow: 0 0 10px #f9b40050;
+  box-shadow: 0 0 10px #1df90050;
 }
 
 .cards {
@@ -79,10 +80,10 @@ body {
   margin-top: 30px;
 }
 .card:hover {
-  background: #f9b400;
+  background: #00f900;
   color: #111;
   transform: translateY(-8px);
-  box-shadow: 0 0 20px #f9b400;
+  box-shadow: 0 0 20px #00f900;
 }
 
 .card:hover .icon {
@@ -107,7 +108,7 @@ body {
   padding: 25px 40px;
   border-top: 1px solid #333;
   font-size: 18px;
-  color: #f9b400;
+  color: #00f900;
   margin-top: 60px;
 }
 
