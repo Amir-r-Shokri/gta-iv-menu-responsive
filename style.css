@@ -128,28 +128,121 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+
+/* RESPONSIVE AND LAYOUT FIX */
+
+/* Medium screens (tablets) */
+@media (max-width: 1200px) {
   .menu-bar {
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0;
+    margin-top: 5rem;
   }
 
-  .menu-item {
+  .menu-bar a {
     font-size: 24px;
-    margin: 10px;
+    margin: 8px 18px;
+  }
+
+  .welcome-heading {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+
+  .cards {
+    gap: 25px;
+  }
+
+  .card {
+    width: 260px;
+    padding: 28px 18px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+/* Mobile Layout (phones & small devices) */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px; /* Reserve space for fixed navbar */
+  }
+
+  .menu-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    border-top: 1px solid #333;
+    border-bottom: none;
+    padding: 8px 0;
+    justify-content: space-around;
+    margin-top: 0;
+    z-index: 1000;
+  }
+
+  .menu-bar a {
+    font-size: 20px;
+    margin: 0;
+    padding: 8px 12px;
+  }
+
+  .content {
+    padding: 30px 20px;
+  }
+
+  .welcome-heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding: 0 10px;
   }
 
   .cards {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .card {
-    width: 90%;
+    width: 92%;
+    padding: 22px 16px;
   }
 
   .footer {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
+    padding: 18px 20px;
+    font-size: 16px;
+    position: relative;
+    z-index: 900; /* Keeps it above content but under navbar */
+    border-top: 1px solid #333;
+    margin-bottom: 10px;
+  }
+
+  .controls {
+    font-size: 14px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .menu-bar a {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+
+  .welcome-heading {
+    font-size: 26px;
+  }
+
+  .card {
+    padding: 18px 14px;
+  }
+
+  .footer {
+    font-size: 14px;
   }
 }
