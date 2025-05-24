@@ -146,48 +146,50 @@ body {
 
 /* MOBILE-FIRST: Small phones (Portrait) ≤ 480px */
 @media (max-width: 480px) {
-  body {
-    padding-bottom: 70px;
-  }
-
   .menu-bar {
+    display: flex;
+    justify-content: space-around;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background: #000;
     border-top: 1px solid #333;
-    justify-content: space-around;
-    padding: 6px 0;
+    padding: 10px 0;
     z-index: 999;
   }
 
   .menu-bar a {
-    font-size: 16px;
-    padding: 5px;
+    font-size: 20px;
     margin: 0;
+    padding: 6px 0;
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
-  .content {
-    padding: 20px 12px;
+  .menu-bar a::before {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 4px;
   }
 
-  .welcome-heading {
-    font-size: 26px;
-    margin-bottom: 20px;
-  }
+  /* Icon content via FontAwesome classes */
+  .menu-bar a:nth-child(1)::before { content: '\f015'; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+  .menu-bar a:nth-child(2)::before { content: '\f013'; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+  .menu-bar a:nth-child(3)::before { content: '\f5fc'; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+  .menu-bar a:nth-child(4)::before { content: '\f3cd'; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+  .menu-bar a:nth-child(5)::before { content: '\f086'; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+  .menu-bar a:nth-child(6)::before { content: '\f0e0'; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
 
-  .card {
-    width: 90%;
-    padding: 20px 14px;
-  }
-
-  .footer {
-    padding: 16px 12px;
-    font-size: 14px;
-    margin-bottom: 70px;
+  .menu-bar a span {
+    display: none;
   }
 }
+
+
+
 
 /* PHONES: 481px - 767px */
 @media (min-width: 481px) and (max-width: 767px) {
